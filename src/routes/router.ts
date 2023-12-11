@@ -21,7 +21,7 @@ import {
   loginSchema,
   createSchema,
   updateSchema,
-} from "../controller/schema-validations";
+} from "../helpers/validations-helper";
 const jwt = require("jsonwebtoken");
 const secretKey = "secretKey";
 

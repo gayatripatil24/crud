@@ -1,6 +1,5 @@
 import { Pool } from "pg";
 import { data, id } from "./constants";
-// const dotenv = require("dotenv");
 require("dotenv").config();
 const { USER, HOST, DATABASE, PASSWORD, PORT } = process.env;
 const pool = new Pool({

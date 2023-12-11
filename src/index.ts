@@ -1,5 +1,5 @@
 import express = require("express");
-const port = 3000;
+require("dotenv").config();
 const app = express();
 const bodyParser = require("body-parser");
 app.use(bodyParser());
@@ -21,6 +21,8 @@ app.use(express.static("public"));
 // Using the route file as middleware
 app.use("/", routes);
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+app.listen(process.env.SERVER_PORT, () => {
+  console.log(
+    `Server is running at http://localhost:${process.env.SERVER_PORT}`
+  );
 });
