@@ -1,6 +1,6 @@
-# crud
+# CRUD Operations Using Node JS, Typescript and PostgreSQL
 
-#Step 1
+# Step 1
 Create Database and table using:
 
 CREATE DATABASE pg_db1;
@@ -15,25 +15,25 @@ role VARCHAR (50) NOT NULL,
 PRIMARY KEY (id)
 );
 
-#Add one user in the table to perform the crud operations
+## Add one user in the table to perform the crud operations
 INSERT INTO users (name, email, password, role)
 VALUES ('Gayatri', 'gayatri@gmail.com', '12345', 'admin');
 
-#Step 2
+# Step 2
 After cloning the project, install the packages using:
 npm i
 
-#Step 3
+# Step 3
 Set up envionment variables related to database connection in .env file
 
 #Step 4
 Run the Program using:
 npm start
 
-#Step 5
+# Step 5
 Check the APIs on Postman:
 
-#APIs:
+# APIs:
 
 1.  login(http://localhost:3000/login)
     Get token from this api and use it in Headers' 'authorization' to perform crud operations
